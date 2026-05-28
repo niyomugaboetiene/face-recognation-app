@@ -17,7 +17,11 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
         img = get_cv2_image_from_base64_string(image_base64_data)
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = 
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+
+    cropped_faces = []
+    for (x, y, w, h) in faces:
+        
 def get_b64_test_image_for_virat():
     with open("b64.txt") as f:
         return f.read()
