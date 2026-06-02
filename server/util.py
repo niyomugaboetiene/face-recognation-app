@@ -6,7 +6,7 @@ from wavelet import w2d
 def classify_image(image_base64_data, file_path=None):
     pass
 
-def get_cv2_image_From_base64_string(b64str):
+def get_cv2_image_from_base64_string(b64str):
     encoded_data = b64str.split(',')[1]
     nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
