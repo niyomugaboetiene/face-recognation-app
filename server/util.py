@@ -3,6 +3,12 @@ import base64
 import json
 import numpy as np
 from wavelet import w2d
+
+__class_name_to_number = {}
+__class_number_to_name = {}
+
+__model = None
+
 def classify_image(image_base64_data, file_path=None):
     imgs = cropp_image_if_2_eyes(file_path, image_base64_data)
     
@@ -16,12 +22,20 @@ def classify_image(image_base64_data, file_path=None):
         
         final = combined_img.reshape(1, len_image_array).astype(float)
 
+def load_saved_artifaces():
+    print("Loading saved artifacts....")
+    global __class_name_to_number
+    global __class_number_to_name
+
+    with open('./artifacts/class_dictonary.json', 'r') as f:
+        
 
 def get_cv2_image_from_base64_string(b64str):
     encoded_data = b64str.split(',')[1]
     nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     return img
+
 
 def cropp_image_if_2_eyes(image_path, image_base64_data):
     face_cascade = cv2.CascadeClassifier(
