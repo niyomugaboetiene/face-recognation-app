@@ -9,7 +9,10 @@ def classify_image(image_base64_data, file_path=None):
     for img in imgs:
         scalled_raw_img = cv2.resize(img, (32, 32))
         img_har = w2d(img, 'db1', 5)
-        scalled_raw_har = cv2.resize(img_har, )
+        scalled_raw_har = cv2.resize(img_har, (32, 32))
+        combined_img = np.vstack((scalled_raw_img.reshape(32 * 32 * 3, 1), scalled_raw_har.reshape(32 * 32, 1)))
+
+        len_image_array = 32 * 
 
 
 def get_cv2_image_from_base64_string(b64str):
