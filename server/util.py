@@ -5,7 +5,9 @@ import numpy as np
 from wavelet import w2d
 def classify_image(image_base64_data, file_path=None):
     imgs = cropp_image_if_2_eyes(file_path, image_base64_data)
-
+    
+    for img in imgs:
+        
 
 
 def get_cv2_image_from_base64_string(b64str):
