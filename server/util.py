@@ -6,13 +6,14 @@ from wavelet import w2d
 def classify_image(image_base64_data, file_path=None):
     imgs = cropp_image_if_2_eyes(file_path, image_base64_data)
 
-    
+
 
 def get_cv2_image_from_base64_string(b64str):
     encoded_data = b64str.split(',')[1]
     nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     return img
+
 def cropp_image_if_2_eyes(image_path, image_base64_data):
     face_cascade = cv2.CascadeClassifier(
          cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
