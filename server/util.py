@@ -2,6 +2,7 @@ import cv2
 import base64
 import json
 import numpy as np
+import joblib
 from wavelet import w2d
 
 __class_name_to_number = {}
@@ -32,6 +33,10 @@ def load_saved_artifaces():
         __class_number_to_name = { v:k for k,v in __class_name_to_number.items()}
 
         global __model
+        if __model is None:
+            with open('./artifacts/saced_model.pkl', 'rb') as f:
+                __model = joblib.load()
+        print("loading saved artifacts...done")
 
 
 def get_cv2_image_from_base64_string(b64str):
