@@ -23,12 +23,16 @@ def classify_image(image_base64_data, file_path=None):
         final = combined_img.reshape(1, len_image_array).astype(float)
 
 def load_saved_artifaces():
-    print("Loading saved artifacts....")
+    print("Loading saved artifacts....start")
     global __class_name_to_number
     global __class_number_to_name
 
     with open('./artifacts/class_dictonary.json', 'r') as f:
-        
+        __class_name_to_number = json.load(f)
+        __class_number_to_name = { v:k for k,v in __class_name_to_number.items()}
+
+        global __model
+
 
 def get_cv2_image_from_base64_string(b64str):
     encoded_data = b64str.split(',')[1]
