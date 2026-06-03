@@ -67,6 +67,9 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = img[y:y+h, x:x+h]
         eyes = eye_cascade.detectMultiScale(roi_gray)
+        if len(eyes) >= 2:
+            cropped_faces.append(roi_color)
+        return cropped_faces
 
 def get_b64_test_image_for_virat():
     with open("b64.txt") as f:
