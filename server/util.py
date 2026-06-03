@@ -4,7 +4,9 @@ import json
 import numpy as np
 from wavelet import w2d
 def classify_image(image_base64_data, file_path=None):
-    pass
+    imgs = cropp_image_if_2_eyes(file_path, image_base64_data)
+
+    
 
 def get_cv2_image_from_base64_string(b64str):
     encoded_data = b64str.split(',')[1]
@@ -32,6 +34,7 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = img[y:y+h, x:x+h]
         eyes = eye_cascade.detectMultiScale(roi_gray)
+
 def get_b64_test_image_for_virat():
     with open("b64.txt") as f:
         return f.read()
