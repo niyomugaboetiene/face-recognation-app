@@ -13,6 +13,7 @@ __model = None
 def classify_image(image_base64_data, file_path=None):
     imgs = cropp_image_if_2_eyes(file_path, image_base64_data)
     
+    result = []
     for img in imgs:
         scalled_raw_img = cv2.resize(img, (32, 32))
         img_har = w2d(img, 'db1', 5)
@@ -23,7 +24,9 @@ def classify_image(image_base64_data, file_path=None):
         
         final = combined_img.reshape(1, len_image_array).astype(float)
 
-        __model.predict(final)
+        result.append(__model.predict(final)[0])
+    return result
+        
 
 def load_saved_artifaces():
     print("Loading saved artifacts....start")
