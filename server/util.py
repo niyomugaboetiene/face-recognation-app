@@ -28,24 +28,47 @@ def classify_image(image_base64_data, file_path=None):
     return result
         
 
+import os
+import json
+import joblib
+
 def load_saved_artifaces():
     print("Loading saved artifacts....start")
+
     global __class_name_to_number
     global __class_number_to_name
+    global __model
 
-    with open('./artifacts/class_dictonary.json', 'r') as f:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    class_dict_path = os.path.join(
+        BASE_DIR,
+        "artifacts",
+        "class_dictonary.json"
+    )
+
+    model_path = os.path.join(
+        BASE_DIR,
+        "artifacts",
+        "saved_model.pkl"
+    )
+
+    with open(class_dict_path, 'r') as f:
         __class_name_to_number = json.load(f)
-        __class_number_to_name = { v:k for k,v in __class_name_to_number.items()}
+        __class_number_to_name = {
+            v: k for k, v in __class_name_to_number.items()
+        }
 
-        global __model
-        if __model is None:
-            with open('./artifacts/saced_model.pkl', 'rb') as f:
-                __model = joblib.load()
-        print("loading saved artifacts...done")
+    if __model is None:
+        __model = joblib.load(model_path)
 
+    print("loading saved artifacts...done")
 
 def get_cv2_image_from_base64_string(b64str):
-    encoded_data = b64str.split(',')[1]
+    if ',' in b64str:
+         encoded_data = b64str.split(',')[1]
+    else:
+        encoded_data = b64str
     nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     return img
@@ -74,7 +97,7 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
         eyes = eye_cascade.detectMultiScale(roi_gray)
         if len(eyes) >= 2:
             cropped_faces.append(roi_color)
-        return cropped_faces
+    return cropped_faces
 
 def get_b64_test_image_for_virat():
     with open("b64.txt") as f:
@@ -82,5 +105,6 @@ def get_b64_test_image_for_virat():
     
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
+    load_saved_artifaces()
     print(classify_image(get_b64_test_image_for_virat(), None))
