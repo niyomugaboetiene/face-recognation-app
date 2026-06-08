@@ -23,6 +23,8 @@ def classify_image(image_base64_data, file_path=None):
         
         final = combined_img.reshape(1, len_image_array).astype(float)
 
+        __model.predict(final)
+
 def load_saved_artifaces():
     print("Loading saved artifacts....start")
     global __class_name_to_number
