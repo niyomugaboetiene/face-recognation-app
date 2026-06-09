@@ -96,6 +96,7 @@ def load_saved_artifaces():
     # print("loading saved artifacts...done")
 
 
+# convert base64 string into image that open cv can understand and read
 def get_cv2_image_from_base64_string(b64str):
     try:
         if ',' in b64str:
