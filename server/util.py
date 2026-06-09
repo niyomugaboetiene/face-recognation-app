@@ -15,16 +15,16 @@ __model = None
 def classify_image(image_base64_data, file_path=None):
     imgs = cropp_image_if_2_eyes(file_path, image_base64_data)
 
-    print("Images returned from face crop:", len(imgs))
+    # print("Images returned from face crop:", len(imgs))
 
     if len(imgs) == 0:
-        print("No valid face found.")
+        # print("No valid face found.")
         return []
 
     result = []
 
     for i, img in enumerate(imgs):
-        print(f"\nProcessing face {i + 1}")
+        # print(f"\nProcessing face {i + 1}")
 
         scalled_raw_img = cv2.resize(img, (32, 32))
 
@@ -47,7 +47,7 @@ def classify_image(image_base64_data, file_path=None):
 
         prediction = __model.predict(final)[0]
 
-        print("Prediction:", prediction)
+        # print("Prediction:", prediction)
 
         result.append(prediction)
 
@@ -55,7 +55,7 @@ def classify_image(image_base64_data, file_path=None):
 
 
 def load_saved_artifaces():
-    print("Loading saved artifacts....start")
+    # print("Loading saved artifacts....start")
 
     global __class_name_to_number
     global __class_number_to_name
@@ -75,8 +75,8 @@ def load_saved_artifaces():
         "saved_model.pkl"
     )
 
-    print("Dictionary Path:", class_dict_path)
-    print("Model Path:", model_path)
+    # print("Dictionary Path:", class_dict_path)
+    # print("Model Path:", model_path)
 
     with open(class_dict_path, "r") as f:
         __class_name_to_number = json.load(f)
@@ -88,10 +88,10 @@ def load_saved_artifaces():
     if __model is None:
         __model = joblib.load(model_path)
 
-    print("Classes loaded:")
+    # print("Classes loaded:")
     print(__class_name_to_number)
 
-    print("loading saved artifacts...done")
+    # print("loading saved artifacts...done")
 
 
 def get_cv2_image_from_base64_string(b64str):
@@ -145,7 +145,7 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
         print("Image is None")
         return []
 
-    print("Image shape:", img.shape)
+    # print("Image shape:", img.shape)
 
     gray = cv2.cvtColor(
         img,
@@ -158,7 +158,7 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
         minNeighbors=5
     )
 
-    print("Faces detected:", len(faces))
+    # print("Faces detected:", len(faces))
 
     cropped_faces = []
 
@@ -178,21 +178,13 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
             roi_gray
         )
 
-        print("Eyes detected:", len(eyes))
-
-        for eye_index, (ex, ey, ew, eh) in enumerate(eyes):
-            print(
-                f"Eye {eye_index + 1}: "
-                f"x={ex}, y={ey}, w={ew}, h={eh}"
-            )
+        # print("Eyes detected:", len(eyes))
 
         if len(eyes) >= 2:
-            print("Face accepted")
+            # print("Face accepted")
             cropped_faces.append(roi_color)
-        else:
-            print("Face rejected")
 
-    print("\nTotal accepted faces:", len(cropped_faces))
+    # print("\nTotal accepted faces:", len(cropped_faces))
 
     return cropped_faces
 
@@ -216,5 +208,5 @@ if __name__ == "__main__":
         get_b64_test_image_for_virat()
     )
 
-    print("\nFINAL RESULT:")
+    # print("\nFINAL RESULT:")
     print(result)
