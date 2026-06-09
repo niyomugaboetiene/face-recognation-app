@@ -23,7 +23,7 @@ def classify_image(image_base64_data, file_path=None):
 
     result = []
 
-    for i, img in enumerate(imgs):
+    for img in enumerate(imgs):
         # print(f"\nProcessing face {i + 1}")
 
         scalled_raw_img = cv2.resize(img, (32, 32))
@@ -89,7 +89,7 @@ def load_saved_artifaces():
         __model = joblib.load(model_path)
 
     # print("Classes loaded:")
-    print(__class_name_to_number)
+    # print(__class_name_to_number)
 
     # print("loading saved artifacts...done")
 
@@ -162,14 +162,7 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
 
     cropped_faces = []
 
-    for idx, (x, y, w, h) in enumerate(faces):
-        print("\n--------------------------------")
-        print("Face", idx + 1)
-        print("x =", x)
-        print("y =", y)
-        print("w =", w)
-        print("h =", h)
-
+    for (x, y, w, h) in enumerate(faces):
         roi_gray = gray[y:y+h, x:x+w]
 
         roi_color = img[y:y+h, x:x+w]
