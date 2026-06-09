@@ -24,7 +24,7 @@ def classify_image(image_base64_data, file_path=None):
     result = []
 
     # enumerate adds an index
-    for img in enumerate(imgs):
+    for img in imgs:
         # print(f"\nProcessing face {i + 1}")
 
         # scale image because ml model require fixed size inputs
@@ -51,7 +51,7 @@ def classify_image(image_base64_data, file_path=None):
 
         # print("Prediction:", prediction)
 
-        result.append(prediction)
+        result.append(__class_name_to_number[prediction])
 
     return result
 
@@ -167,7 +167,7 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
 
     cropped_faces = []
 
-    for (x, y, w, h) in enumerate(faces):
+    for (x, y, w, h) in faces:
         roi_gray = gray[y:y+h, x:x+w]
 
         roi_color = img[y:y+h, x:x+w]
