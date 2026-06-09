@@ -104,11 +104,13 @@ def get_cv2_image_from_base64_string(b64str):
         else:
             encoded_data = b64str
 
+         # convert bytes to numpy array
         nparr = np.frombuffer(
             base64.b64decode(encoded_data),
             np.uint8
         )
 
+        # decode image
         img = cv2.imdecode(
             nparr,
             cv2.IMREAD_COLOR
