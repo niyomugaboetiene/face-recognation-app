@@ -23,6 +23,7 @@ def classify_image(image_base64_data, file_path=None):
 
     result = []
 
+    # enumerate adds an index
     for img in enumerate(imgs):
         # print(f"\nProcessing face {i + 1}")
 
