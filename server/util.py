@@ -133,10 +133,10 @@ def cropp_image_if_2_eyes(image_path, image_base64_data):
     )
 
     if image_path:
-        print("Reading image from file:", image_path)
+        # print("Reading image from file:", image_path)
         img = cv2.imread(image_path)
     else:
-        print("Reading image from base64")
+        # print("Reading image from base64")
         img = get_cv2_image_from_base64_string(
             image_base64_data
         )
