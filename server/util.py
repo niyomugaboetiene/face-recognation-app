@@ -27,6 +27,7 @@ def classify_image(image_base64_data, file_path=None):
     for img in enumerate(imgs):
         # print(f"\nProcessing face {i + 1}")
 
+        # scale image because ml model require fixed size inputs
         scalled_raw_img = cv2.resize(img, (32, 32))
 
         img_har = w2d(img, 'db1', 5)
