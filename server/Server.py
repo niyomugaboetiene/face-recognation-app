@@ -17,4 +17,5 @@ def classify_image():
 
 
 if __name__ == "__main__":
+    util.load_saved_artifaces()
     app.run(port=5000)
