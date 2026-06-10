@@ -33,10 +33,21 @@ function App() {
         console.error(err);
        }
      }
-     
+
   return (
        <div>
+           <h1>Face Recognation App</h1>
 
+           <input type="file" 
+              accept="image/*"
+              onChange={handleFileChange}
+           />
+
+           {preview && (
+            <>
+               
+            </>
+           )}
        </div>
   )
 }
