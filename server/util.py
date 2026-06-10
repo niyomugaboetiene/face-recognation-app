@@ -207,9 +207,9 @@ if __name__ == "__main__":
         get_b64_test_image_for_virat()
     )
 
-    print(classify_image(None, './test_images/lionel_messi2.png'))
-    print(classify_image(None, './test_images/maria_sharapova9.png'))
-    print(classify_image(None, './test_images/roger_federer12.png'))
+    # print(classify_image(None, './test_images/lionel_messi2.png'))
+    # print(classify_image(None, './test_images/maria_sharapova9.png'))
+    # print(classify_image(None, './test_images/roger_federer12.png'))
     print(classify_image(None, './test_images/virat_kohli6.png'))
 
     # print("\nFINAL RESULT:")

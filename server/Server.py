@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import util
 
 app = Flask(__name__)
 
@@ -7,7 +8,9 @@ app = Flask(__name__)
 #     return "Hi"
 @app.route('/classify_image', methoods = ['GET', 'POST'])
 def classify_image():
-    pass
+    image_data = request.form['image_data']
+
+    util.classify_image(image_data)
 
 if __name__ == "__main__":
     app.run(port=5000)
