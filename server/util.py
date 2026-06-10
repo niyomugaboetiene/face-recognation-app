@@ -52,6 +52,7 @@ def classify_image(image_base64_data, file_path=None):
         # print("Prediction:", prediction)
 
         result.append(prediction)
+        __model.predict_proba(final)
 
     return result
 
