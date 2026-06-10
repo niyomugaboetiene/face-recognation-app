@@ -47,10 +47,6 @@ def classify_image(image_base64_data, file_path=None):
             len_image_array
         ).astype(float)
 
-        prediction = __model.predict(final)[0]
-
-        # print("Prediction:", prediction)
-
         result.append({
             'class': __class_number_to_name[__model.predict(final)[0]],
             'class_probability': np.round(__model.predict_proba(final)*100, 2).tolist()[0],
