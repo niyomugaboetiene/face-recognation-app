@@ -16,7 +16,6 @@ def classify_image():
     response = jsonify(util.classify_image(image_data))    
     return response
 
-
 if __name__ == "__main__":
     util.load_saved_artifaces()
     app.run(port=5000)
