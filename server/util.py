@@ -51,7 +51,7 @@ def classify_image(image_base64_data, file_path=None):
 
         # print("Prediction:", prediction)
 
-        result.append(__class_name_to_number[int(prediction)])
+        result.append(prediction)
 
     return result
 
