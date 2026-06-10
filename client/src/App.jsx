@@ -1,4 +1,5 @@
 import { useState } from "react"
+import axios from "axios";
 
 function App() {
 
@@ -24,11 +25,16 @@ function App() {
 
      const classifyImage = async () => {
        try {
+          const formData = new FormData();
+
+          formData.append('image_data', preview);
+
           const response = await axios.post(
-            'http://localhost:5000/classify_image', { image: preview }
+            'http://127.0.0.1:5000/classify_image', formData
           );
 
-          setResult(response.data);
+          setResult(response.data[0]);
+          console.log(response.data);
        } catch (err) {
         console.error(err);
        }
