@@ -53,7 +53,7 @@ def classify_image(image_base64_data, file_path=None):
 
         result.append({
             'class': __class_number_to_name(__model.predict(final)[0]),
-            'class_probability': __model.predict_proba(final)
+            'class_probability': np.round(__model.predict_proba(final)*100, 2).tolist()
         })
         # __model.predict_proba(final)
 
