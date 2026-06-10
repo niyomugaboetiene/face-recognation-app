@@ -45,8 +45,28 @@ function App() {
 
            {preview && (
             <>
-               
+               <br />
+               <img src={preview} 
+                  alt="Preview" 
+                  width={300}
+               />
+
+               <br />
+
+               <button onClick={classifyImage}>
+                   Predict
+               </button>
             </>
+           )}
+
+           {result && (
+              <div>
+                   <h2>Prediction Result</h2>
+
+                   <p>
+                    Name: {result.class}
+                   </p>
+              </div>
            )}
        </div>
   )
