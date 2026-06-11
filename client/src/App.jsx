@@ -62,7 +62,7 @@ function App() {
 
                <br />
 
-               <button onClick={classifyImage} className="w-full mt-2 bg-linear-to-br from-blue-400 to-green-400 via-purple-400">
+               <button onClick={classifyImage} className="w-full mt-2 bg-blue-300 py-2 rounded-lg font-bold text-white hover:scale-105 transition duration-200">
                    Predict
                </button>
             </>
