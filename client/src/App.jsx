@@ -41,9 +41,9 @@ function App() {
      }
 
   return (
-       <div className="">
-            <div>
-                <h1>Face Recognation App</h1>
+       <div className="min-h-screen bg-linear-to-bl from-purple-500 to-green-500 via-blue-500 flex justify-center items-center">
+            <div className="bg-linear-to-r from-green-400 to-blue-400 via-purple-400 p-5 rounded-lg shadow-2xl">
+                <h1 className="text-center">Face Recognation App</h1>
 
            <input type="file" 
               accept="image/*"
