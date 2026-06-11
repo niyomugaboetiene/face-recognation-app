@@ -68,15 +68,17 @@ function App() {
             </>
            )}
 
-           {result && (
-              <div>
-                   <h2>Prediction Result</h2>
+          <div>
+             {result && (
+              <div className="mt-3 bg-white p-3">
+                   <h2 className="text-gray-700 font-bold text-center mb-2 text-xl">Prediction Result</h2>
 
-                   <p>
+                   <p className="font-bold text-lg text-gray-700">
                     Name: {result.class}
                    </p>
               </div>
            )}
+          </div>
             </div>
        </div>
   )
