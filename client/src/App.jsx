@@ -43,10 +43,11 @@ function App() {
   return (
        <div className="min-h-screen bg-linear-to-bl from-purple-500 to-green-500 via-blue-500 flex justify-center items-center">
             <div className="bg-linear-to-r from-green-400 to-blue-400 via-purple-400 p-5 rounded-lg shadow-2xl">
-                <h1 className="text-center">Face Recognation App</h1>
+                <h1 className="text-center text-xl font-bold text-white mb-3">Face Recognation App (ML Based)</h1>
 
            <input type="file" 
               accept="image/*"
+              className="w-full border-green-400 border-2 rounded-full p-2 mb-3 text-gray-700 font-bold"
               onChange={handleFileChange}
            />
 
@@ -55,12 +56,13 @@ function App() {
                <br />
                <img src={preview} 
                   alt="Preview" 
+                  className=" rounded-xl object-fill ms-2 shadow-lg"
                   width={300}
                />
 
                <br />
 
-               <button onClick={classifyImage}>
+               <button onClick={classifyImage} className="w-full mt-2 bg-linear-to-br from-blue-400 to-green-400 via-purple-400">
                    Predict
                </button>
             </>
