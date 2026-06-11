@@ -42,7 +42,8 @@ function App() {
 
   return (
        <div>
-           <h1>Face Recognation App</h1>
+            <div>
+                <h1>Face Recognation App</h1>
 
            <input type="file" 
               accept="image/*"
@@ -74,6 +75,7 @@ function App() {
                    </p>
               </div>
            )}
+            </div>
        </div>
   )
 }
