@@ -41,7 +41,7 @@ function App() {
      }
 
   return (
-       <div>
+       <div className="">
             <div>
                 <h1>Face Recognation App</h1>
 
