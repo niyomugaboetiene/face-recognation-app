@@ -52,6 +52,13 @@ export default function HowItWorks() {
              </div>
         </div>
       </div>
+
+      <div className='flex justify-between items-center p-5 max-w-7xl mx-auto px-8 mt-10'>
+          <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
+          <div>
+
+          </div>
+      </div>
    </div>
   );
 }
