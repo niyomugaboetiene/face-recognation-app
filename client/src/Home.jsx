@@ -59,8 +59,9 @@ export default function Header() {
                 <button className='text-white bg-gradient-to-r bg-gray-500 shadow-xl shadow-white font-bold py-4 px-8 rounded-full  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Book Demo</button>
             </div>
         </div>
-          <div>
 
+          <div className='relative top-20 left-20'>
+              <img src={Image} className='w-120 h-100 rounded-2xl' />
           </div>
         <div>
         </div>
