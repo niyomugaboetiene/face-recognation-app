@@ -65,20 +65,20 @@ export default function HowItWorks() {
               
               <div>
                  <FaLock className='text-white' />
-                 <h1>GDPR & Compliance Ready</h1>
-                 <p>We follow strict global data protection standard.</p>
+                 <h1>No Data Stored Without Consent</h1>
+                 <p>Replace password with face authentication for frictionless login.</p>
               </div>
               
               <div>
                  <FaShieldAlt className='text-white' />
-                 <h1>GDPR & Compliance Ready</h1>
+                 <h1>Advanced Anti-Spoofing</h1>
                  <p>We follow strict global data protection standard.</p>
               </div>
               
               <div>
                  <FaUser className='text-white' />
-                 <h1>GDPR & Compliance Ready</h1>
-                 <p>We follow strict global data protection standard.</p>
+                 <h1>End-to-End Encryption</h1>
+                 <p>Every authentication request is securely encrypted to protect against breaches.</p>
               </div>
           </div>
       </div>
