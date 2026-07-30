@@ -57,7 +57,7 @@ export default function Header() {
             <p className='text-white text-lg mt-4 font-light'>Seamless, secure, and lightning-fast facial recognation technology for authentication, security, and access control.</p>
 
             <div className='flex space-x-12 mt-12'>
-                <button className='text-white bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 text-white shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Get Started</button>
+                <Link className='text-white bg-gradient-to-r flex justify-center items-center from-purple-600 shadow-xl to-pink-600 text-white shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300' to='/prediction'>Get Started</Link>
                 <button className='text-white bg-gradient-to-r bg-gray-500 shadow-xl shadow-white font-bold py-4 px-8 rounded-full  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Book Demo</button>
             </div>
         </div>

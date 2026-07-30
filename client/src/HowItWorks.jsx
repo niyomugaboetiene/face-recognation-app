@@ -2,6 +2,7 @@ import React from 'react';
 import Image1 from "./assets/image1.png";
 import Image2 from "./assets/image2.png";
 import { FaLock, FaFile, FaFolder, FaKey } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function HowItWorks() {
   return (
@@ -93,7 +94,7 @@ export default function HowItWorks() {
             <p className='text-center mt-3 text-xl text-white'>Stay today and enhance security with the power of AI.</p>
 
             <div className='mt-12 flex justify-center space-x-12 '>
-              <button className='text-white bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 text-white shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Get Started</button>
+              <Link className='text-white bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 text-white flex justify-center items-center shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300' to='/prediction'>Get Started</Link>
               <button className='text-white bg-gradient-to-r bg-gray-500 shadow-xl shadow-white font-bold py-4 px-8 rounded-full  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Book Demo</button>
             </div>
          </div>
