@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from "./assets/image.png"
-import { FaFire } from "react-icons/fa";
+import { FaFire, FaLock, FaLink, FaDesktop } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -77,11 +77,29 @@ export default function Header() {
 
       <div className='relative z-10 w-full items-center p-5 max-w-7xl mx-auto px-8'>
          <h1 className='text-5xl font-bold text-white mt-30 text-center'>Why Choose Us for Your Face Recognation Technology ?</h1>
-         <div className='flex'>
-            <div>
-                <FaFire className='text-white'/>
-                <h1>Hight Accuracy & Speed</h1>
-                <p>Our AI-driven algorithm ensures fast and precise facial recognation in real-time.</p>
+         <div className='flex space-x-12 mt-12 bg-white/10 backdrop-blur-lg p-10 rounded-md'>
+            <div className='bg-white/10  h-60 rounded-lg p-2 backdrop-blur-md hover:scale-105 transition duration-300'>
+                <FaFire className='text-blue-400 font-bold text-5xl mt-2'/>
+                <h1 className='text-white mt-3 text-xl font-bold'>Hight Accuracy & Speed</h1>
+                <p className='mt-3 text-white'>Our AI-driven algorithm ensures fast and precise facial recognation in real-time.</p>
+            </div>
+            
+            <div className='bg-white/10  h-60 rounded-lg p-2 backdrop-blur-md hover:scale-105 transition duration-300'>
+                <FaLock className='text-blue-400 font-bold text-5xl'/>
+                <h1 className='text-white mt-3 text-xl font-bold'>Hight Accuracy & Speed</h1>
+                <p className='mt-3 text-white'>Our AI-driven algorithm ensures fast and precise facial recognation in real-time.</p>
+            </div>
+            
+            <div className='bg-white/10  h-60 rounded-lg p-2 backdrop-blur-md hover:scale-105 transition duration-300'>
+                <FaLink className='text-blue-400 font-bold text-5xl'/>
+                <h1 className='text-white mt-3 text-xl font-bold'>Hight Accuracy & Speed</h1>
+                <p className='mt-3 text-white'>Our AI-driven algorithm ensures fast and precise facial recognation in real-time.</p>
+            </div>
+            
+            <div className='bg-white/10 h-60 rounded-lg p-2 backdrop-blur-md hover:scale-105 transition duration-300'>
+                <FaDesktop className='text-blue-400 font-bold text-5xl'/>
+                <h1 className='text-white mt-3 text-xl font-bold'>Hight Accuracy & Speed</h1>
+                <p className='mt-3 text-white'>Our AI-driven algorithm ensures fast and precise facial recognation in real-time.</p>
             </div>
          </div>
       </div>
