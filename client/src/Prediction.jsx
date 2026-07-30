@@ -45,7 +45,7 @@ const Prediction = () => {
           
             <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
              <div>
-                  <h1 className="text-center text-xl font-bold text-white mb-3">Face Recognation App (ML Based)</h1>
+               <h1 className="text-center text-xl font-bold text-white mb-3">Face Recognation App (ML Based)</h1>
 
            <input type="file" 
               accept="image/*"
