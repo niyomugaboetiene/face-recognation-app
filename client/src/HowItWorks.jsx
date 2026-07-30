@@ -29,6 +29,26 @@ export default function HowItWorks() {
                     <p className='text-white font-stretch-50% ms-3 mt-3'>Capture your facial data using your device camera.</p>
                    </div>
                  </div>
+                 
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-lg p-2 mt-7'>
+                   <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
+                       <h1 className='text-black text-2xl text-center mt-3'>2</h1>
+                   </div>
+                   <div>
+                    <p className='text-2xl text-white font-bold ms-3 mt-3'>AI Processing</p>
+                    <p className='text-white font-stretch-50% ms-3 mt-3'>Our smart algorithm maps and verifies your identity.</p>
+                   </div>
+                 </div>
+                 
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-lg p-2 mt-7'>
+                   <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
+                       <h1 className='text-black text-2xl text-center mt-3'>3</h1>
+                   </div>
+                   <div>
+                    <p className='text-2xl text-white font-bold ms-3 mt-3'>Instant Access</p>
+                    <p className='text-white font-stretch-50% ms-3 mt-3'>Get authenticated securely within second.</p>
+                   </div>
+                 </div>
              </div>
         </div>
       </div>
