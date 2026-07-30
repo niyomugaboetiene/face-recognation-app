@@ -51,7 +51,12 @@ export default function Header() {
       <div className='flex justify-between'>
         <div>
             <h1>Unlock the Future with AI-Powered Face Recognation</h1>
-            <p></p>
+            <p>Seamless, secure, and lightning-fast facial recognation technology for authentication, security, and access control.</p>
+
+            <div>
+                <button>Get Started</button>
+                <button>Book Demo</button>
+            </div>
         </div>
 
         <div>
