@@ -88,15 +88,19 @@ export default function HowItWorks() {
       
 
       <div className='max-w-7xl mx-auto mt-15'>
-         <div className='bg-white/10 backdrop-blur-lg rounded-xl h-60'>
+         <div className='bg-white/10 backdrop-blur-lg rounded-xl h-70 p-5 mb-12'>
             <h1 className='text-4xl w-1/2 ms-70 font-bold text-white text-center'>Ready to Experience the Future of Face Recognation ?</h1>
-            <p className='text-center mt-3 text-2xl text-white'>Stay today and enhance security with the power of AI.</p>
+            <p className='text-center mt-3 text-xl text-white'>Stay today and enhance security with the power of AI.</p>
 
-            <div className='mt-12 flex justify-center space-x-12'>
+            <div className='mt-12 flex justify-center space-x-12 '>
               <button className='text-white bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 text-white shadow-white  font-bold py-2 px-8 rounded-full hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Get Started</button>
               <button className='text-white bg-gradient-to-r bg-gray-500 shadow-xl shadow-white font-bold py-4 px-8 rounded-full  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Book Demo</button>
             </div>
          </div>
+      </div>
+
+      <div>
+          <p className='text-center'>&copy; {new Date().getFullYear()} Kairos.</p>
       </div>
    </div>
   );
