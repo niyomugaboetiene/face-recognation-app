@@ -48,12 +48,12 @@ export default function Header() {
         </div>
       </div>
 
-      <div className='flex justify-between'>
-        <div>
-            <h1>Unlock the Future with AI-Powered Face Recognation</h1>
-            <p>Seamless, secure, and lightning-fast facial recognation technology for authentication, security, and access control.</p>
+      <div className='relative z-10 w-full flex justify-between items-center p-5 max-w-7xl mx-auto px-8'>
+        <div className='w-1/2 mt-12'>
+            <h1 className='text-5xl font-bold text-white'>Unlock the Future with AI-Powered Face Recognation</h1>
+            <p className='text-white text-lg mt-4 font-light'>Seamless, secure, and lightning-fast facial recognation technology for authentication, security, and access control.</p>
 
-            <div>
+            <div className='flex space-x-3 mt-5'>
                 <button>Get Started</button>
                 <button>Book Demo</button>
             </div>
