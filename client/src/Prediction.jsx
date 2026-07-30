@@ -39,9 +39,13 @@ const Prediction = () => {
        }
      }
 
-      <div className="min-h-screen bg-linear-to-bl from-purple-500 to-green-500 via-blue-500 flex justify-center items-center">
-            <div className="bg-linear-to-r from-green-400 to-blue-400 via-purple-400 p-5 rounded-lg shadow-2xl">
-                <h1 className="text-center text-xl font-bold text-white mb-3">Face Recognation App (ML Based)</h1>
+      <div className="relative w-full min-h-screen bg-[#08080e] overflow-hidden">
+           <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-purple-600/40 rounded-full blur-[120px] pointer-events-none"></div>
+            <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-pink-600/30 rounded-full blur-[120px] pointer-events-none"></div>
+          
+            <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
+             <div>
+                  <h1 className="text-center text-xl font-bold text-white mb-3">Face Recognation App (ML Based)</h1>
 
            <input type="file" 
               accept="image/*"
@@ -77,6 +81,7 @@ const Prediction = () => {
               </div>
            )}
           </div>
+             </div>
             </div>
        </div>
 }
