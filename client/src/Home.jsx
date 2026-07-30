@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from "./assets/image.png"
+import { FaFire } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -72,6 +73,17 @@ export default function Header() {
           </div>
         <div>
         </div>
+      </div>
+
+      <div className='relative z-10 w-full items-center p-5 max-w-7xl mx-auto px-8'>
+         <h1 className='text-5xl font-bold text-white mt-30 text-center'>Why Choose Us for Your Face Recognation Technology ?</h1>
+         <div className='flex'>
+            <div>
+                <FaFire className='text-white'/>
+                <h1>Hight Accuracy & Speed</h1>
+                <p>Our AI-driven algorithm ensures fast and precise facial recognation in real-time.</p>
+            </div>
+         </div>
       </div>
     </div>
   );
