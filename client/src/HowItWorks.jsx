@@ -18,7 +18,7 @@ export default function HowItWorks() {
                 <img src={Image2} alt="My Image" className='h-70 w-60 rounded-2xl absolute top-20 left-75 hover:scale-105 transition duration-200' />
              </div>
 
-             <div className=''>
+             <div className='mt-40'>
                  <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
                  <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 h-27'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
