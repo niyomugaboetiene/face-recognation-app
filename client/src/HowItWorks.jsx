@@ -20,9 +20,9 @@ export default function HowItWorks() {
 
              <div className=''>
                  <h1 className='text-5xl font-bold text-white'>How It Works</h1>
-                 <div className='bg-white/10 backdrop-blur-md'>
-                   <div>
-                       <h1>1</h1>
+                 <div className='bg-white/10 backdrop-blur-md flex'>
+                   <div className='bg-white w-12 h-10  rounded-lg'>
+                       <h1 className='text-black'>1</h1>
                    </div>
                    <div>
                     <p>Scan Your face</p>
