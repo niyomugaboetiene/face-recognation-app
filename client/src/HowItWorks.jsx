@@ -20,7 +20,7 @@ export default function HowItWorks() {
              </div>
 
              <div className='mt-40'>
-                 <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
+                 <h1 className='text-5xl font-bold text-white mb-4'>How It Works.</h1>
                  <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 h-27 hover:scale-105 transition duration-200'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3 font-bold'>1</h1>
@@ -55,8 +55,8 @@ export default function HowItWorks() {
       </div>
 
       <div className='max-w-7xl mx-auto mt-10'>
-          <h1 className='text-5xl font-bold text-white mb-4 text-center'>Your Privancy, Our Priority</h1>
-          <div className='grid grid-cols-2 mt-12'>
+          <h1 className='text-5xl font-bold text-white mb-4 text-center'>Your Privancy, Our Priority.</h1>
+          <div className='grid grid-cols-2 mt-12 shadow-2xl'>
               <div className='bg-white/10 p-4 border-b border-e border-white h-50'>
                  <FaFile className='text-3xl text-blue-400 ms-4' />
                  <h1 className='text-2xl mt-4 text-white font-bold ms-4'>GDPR & Compliance Ready</h1>
@@ -64,23 +64,35 @@ export default function HowItWorks() {
               </div>
               
               <div className='bg-white/10 p-4 border-b border-white h-50'>
-                 <FaFolder className='text-white' />
-                 <h1>No Data Stored Without Consent</h1>
-                 <p>Replace password with face authentication for frictionless login.</p>
+                 <FaFolder  className='text-3xl text-blue-400 ms-4' />
+                 <h1 className='text-2xl mt-4 text-white font-bold ms-4'>No Data Stored Without Consent</h1>
+                 <p className='text-white mt-5 ms-4'>Replace password with face authentication for frictionless login.</p>
               </div>
               
               <div className='bg-white/10 p-4 h-50 border-e border-white'>
-                 <FaKey className='text-white' />
-                 <h1>Advanced Anti-Spoofing</h1>
-                 <p>We follow strict global data protection standard.</p>
+                 <FaKey className='text-3xl text-blue-400 ms-4' />
+                 <h1 className='text-2xl mt-4 text-white font-bold ms-4'>Advanced Anti-Spoofing</h1>
+                 <p className='text-white mt-5 ms-4'>We follow strict global data protection standard.</p>
               </div>
               
               <div className='bg-white/10 p-4 h-50'>
-                 <FaLock className='text-white' />
-                 <h1>End-to-End Encryption</h1>
-                 <p>Every authentication request is securely encrypted to protect against breaches.</p>
+                 <FaLock className='text-3xl text-blue-400 ms-4' />
+                 <h1 className='text-2xl mt-4 text-white font-bold ms-4'>End-to-End Encryption</h1>
+                 <p className='text-white mt-5 ms-4'>Every authentication request is securely encrypted to protect against breaches.</p>
               </div>
           </div>
+      </div>
+
+      <div className='max-w-7xl mx-auto mt-10'>
+         <div className='bg-white/10 backdrop-blur-lg rounded-xl'>
+            <h1>Ready to Experience the Future of Face Recognation ?</h1>
+            <p>Stay today and enhance security with the power of AI.</p>
+
+            <div>
+              <button>Get Started</button>
+              <button>Book Demo</button>
+            </div>
+         </div>
       </div>
    </div>
   );
