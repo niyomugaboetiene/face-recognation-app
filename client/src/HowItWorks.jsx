@@ -57,7 +57,7 @@ export default function HowItWorks() {
       <div className='max-w-7xl mx-auto mt-10'>
           <h1 className='text-5xl font-bold text-white mb-4 text-center'>Your Privancy, Our Priority</h1>
           <div className='grid grid-cols-2 mt-12'>
-              <div className='bg-white/10 p-4 border-b border-white h-50'>
+              <div className='bg-white/10 p-4 border-b border-e border-white h-50'>
                  <FaFile className='text-3xl text-blue-400 ms-4' />
                  <h1 className='text-2xl mt-4 text-white font-bold ms-4'>GDPR & Compliance Ready</h1>
                  <p className='text-white mt-5 ms-4'>We follow strict global data protection standard.</p>
@@ -69,7 +69,7 @@ export default function HowItWorks() {
                  <p>Replace password with face authentication for frictionless login.</p>
               </div>
               
-              <div className='bg-white/10 p-4 h-50'>
+              <div className='bg-white/10 p-4 h-50 border-e border-white'>
                  <FaKey className='text-white' />
                  <h1>Advanced Anti-Spoofing</h1>
                  <p>We follow strict global data protection standard.</p>
