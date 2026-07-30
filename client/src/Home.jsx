@@ -66,7 +66,7 @@ export default function Header() {
                 <h1 className='text-pink-400 font-bold'>Marie Chanisse</h1>
                 <p className='font-light'>ID 123459</p>
                 <p>KN 88 Nyarugenge</p>
-                <p> Kigali Rwanda</p>
+                <p>Kigali, Rwanda</p>
               </div>
           </div>
         <div>
