@@ -22,7 +22,7 @@ export default function HowItWorks() {
                  <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
                  <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
-                       <h1 className='text-black text-2xl text-center mt-3'>1</h1>
+                       <h1 className='text-black text-2xl text-center mt-3 font-bold'>1</h1>
                    </div>
                    <div>
                     <p className='text-2xl text-white font-bold ms-3 mt-3'>Scan Your face</p>
@@ -30,19 +30,19 @@ export default function HowItWorks() {
                    </div>
                  </div>
                  
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7'>
-                   <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
-                       <h1 className='text-black text-2xl text-center mt-3'>2</h1>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7 border-4 border-blue-400 w-140 shadow-2xl shadow-blue-400'>
+                   <div className='bg-blue-400 w-14 h-13 mt-5  rounded-lg'>
+                       <h1 className='text-black text-2xl text-center mt-3 font-bold'>2</h1>
                    </div>
                    <div>
-                    <p className='text-2xl text-white font-bold ms-3 mt-3'>AI Processing</p>
-                    <p className='text-white font-stretch-50% ms-3 mt-3'>Our smart algorithm maps and verifies your identity.</p>
+                    <p className='text-2xl font-bold ms-3 mt-3 text-blue-400'>AI Processing</p>
+                    <p className='font-stretch-50% ms-3 mt-3 text-blue-400'>Our smart algorithm maps and verifies your identity.</p>
                    </div>
                  </div>
                  
                  <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7'>
-                   <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
-                       <h1 className='text-black text-2xl text-center mt-3'>3</h1>
+                   <div className='bg-white w-14 h-13 mt-5 rounded-lg'>
+                       <h1 className='text-black text-2xl text-center mt-3 font-bold'>3</h1>
                    </div>
                    <div>
                     <p className='text-2xl text-white font-bold ms-3 mt-3'>Instant Access</p>
