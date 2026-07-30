@@ -62,6 +62,11 @@ export default function Header() {
 
           <div className='relative top-20 left-20'>
               <img src={Image} className='w-120 h-100 rounded-2xl  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300' />
+              <div>
+                <h1>Marie Chanisse</h1>
+                <p>ID 123459</p>
+                <p>KN 88 Nyarugenge</p>
+              </div>
           </div>
         <div>
         </div>
