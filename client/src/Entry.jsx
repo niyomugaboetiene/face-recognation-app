@@ -1,5 +1,6 @@
 import Home from "./Home";
 import Prediction from "./Prediction";
+import HowItWorks from "./HowItWorks";
 
 const Entry = () => {
     return (
@@ -7,8 +8,8 @@ const Entry = () => {
            <section id="home">
                 <Home />
            </section>
-           <section id="prediction">
-               <Prediction />
+           <section id="home">
+                <HowItWorks />
            </section>
         </>
     )

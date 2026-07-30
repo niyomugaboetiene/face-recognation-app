@@ -13,7 +13,9 @@ export default function HowItWorks() {
       
       <div className="relative z-10 w-full">
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
-             <img src={Image1} alt="" />
+             <div>
+                <img src={Image1} alt="My Image" className=''/>
+             </div>
         </div>
       </div>
    </div>
