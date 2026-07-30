@@ -19,14 +19,14 @@ export default function HowItWorks() {
              </div>
 
              <div className=''>
-                 <h1 className='text-5xl font-bold text-white'>How It Works</h1>
-                 <div className='bg-white/10 backdrop-blur-md flex'>
-                   <div className='bg-white w-12 h-10  rounded-lg'>
-                       <h1 className='text-black'>1</h1>
+                 <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-lg p-2'>
+                   <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
+                       <h1 className='text-black text-2xl text-center mt-3'>1</h1>
                    </div>
                    <div>
-                    <p>Scan Your face</p>
-                    <p>Capture your facial data using your device camera.</p>
+                    <p className='text-2xl text-white font-bold ms-3 mt-3'>Scan Your face</p>
+                    <p className='text-white font-stretch-50% ms-3 mt-3'>Capture your facial data using your device camera.</p>
                    </div>
                  </div>
              </div>
