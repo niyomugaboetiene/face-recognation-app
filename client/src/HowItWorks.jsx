@@ -100,7 +100,7 @@ export default function HowItWorks() {
       </div>
 
       <div>
-          <p className='text-center'>&copy; {new Date().getFullYear()} Kairos.</p>
+          <p className='text-center text-white font-bold mb-4'>&copy; {new Date().getFullYear()} Kairos. Built with ❤️ and ☕ by <a href="https://github.com/niyomugaboetiene" target='_blank' rel='noopener noreferrer' className='hover:underline bg-gradient-to-r from-purple-600 shadow-xl to-pink-600 bg-clip-text text-transparent'>Niyomugabo Etiene</a></p>
       </div>
    </div>
   );
