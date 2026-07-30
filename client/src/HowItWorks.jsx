@@ -14,7 +14,21 @@ export default function HowItWorks() {
       <div className="relative z-10 w-full">
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
              <div className='mt-40'>
-                <img src={Image1} alt="My Image" className='h-130 w-90 rounded-2xl'/>
+                <img src={Image1} alt="My Image" className='h-130 w-90 rounded-2xl hover:scale-105 transition duration-200'/>
+                <img src={Image2} alt="My Image" className='h-70 w-60 rounded-2xl absolute top-20 left-75 hover:scale-105 transition duration-200' />
+             </div>
+
+             <div className=''>
+                 <h1 className='text-5xl font-bold text-white'>How It Works</h1>
+                 <div className='bg-white/10 backdrop-blur-md'>
+                   <div>
+                       <h1>1</h1>
+                   </div>
+                   <div>
+                    <p>Scan Your face</p>
+                    <p>Capture your facial data using your device camera.</p>
+                   </div>
+                 </div>
              </div>
         </div>
       </div>
