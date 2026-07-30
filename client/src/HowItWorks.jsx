@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Image from "./assets/image.png"
-import { FaFire, FaLock, FaLink, FaDesktop } from "react-icons/fa";
+import Image1 from "./assets/image1.png";
+import Image2 from "./assets/image2.png";
 
 export default function HowItWorks() {
   return (
@@ -14,7 +13,7 @@ export default function HowItWorks() {
       
       <div className="relative z-10 w-full">
         <div className="flex justify-between items-center p-5 max-w-7xl mx-auto px-8">
-             <img src={} alt="" />
+             <img src={Image1} alt="" />
         </div>
       </div>
    </div>
