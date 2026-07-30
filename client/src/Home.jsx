@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Image from "./assets/image.png"
 
 export default function Header() {
   return (
@@ -49,7 +50,7 @@ export default function Header() {
       </div>
 
       <div className='relative z-10 w-full flex justify-between items-center p-5 max-w-7xl mx-auto px-8'>
-        <div className='w-1/2 mt-12'>
+        <div className='w-1/2 mt-20'>
             <h1 className='text-5xl font-bold text-white'>Unlock the Future with AI-Powered Face Recognation</h1>
             <p className='text-white text-lg mt-4 font-light'>Seamless, secure, and lightning-fast facial recognation technology for authentication, security, and access control.</p>
 
@@ -58,9 +59,10 @@ export default function Header() {
                 <button className='text-white bg-gradient-to-r bg-gray-500 shadow-xl shadow-white font-bold py-4 px-8 rounded-full  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300'>Book Demo</button>
             </div>
         </div>
+          <div>
 
+          </div>
         <div>
-
         </div>
       </div>
     </div>
