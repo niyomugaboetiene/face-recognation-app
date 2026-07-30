@@ -62,10 +62,11 @@ export default function Header() {
 
           <div className='relative top-20 left-20'>
               <img src={Image} className='w-120 h-100 rounded-2xl  hover:shadow-[0_0_30px_rgba(168,85,247,0.7)] hover:scale-105 transition-all duration-300' />
-              <div>
-                <h1>Marie Chanisse</h1>
-                <p>ID 123459</p>
+              <div className='absolute bottom-6 left-116 text-white bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 shadow-xl min-w-[180px] hover:scale-105 transition-all duration-300'>
+                <h1 className='text-pink-400 font-bold'>Marie Chanisse</h1>
+                <p className='font-light'>ID 123459</p>
                 <p>KN 88 Nyarugenge</p>
+                <p> Kigali Rwanda</p>
               </div>
           </div>
         <div>
