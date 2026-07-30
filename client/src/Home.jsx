@@ -31,7 +31,7 @@ export default function Header() {
                     </svg>
                 </div>
                 <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 tracking-wide">
-                    AuraID
+                    KAIROS
                 </h1>
             </div>
 
@@ -48,6 +48,16 @@ export default function Header() {
         </div>
       </div>
 
+      <div className='flex justify-between'>
+        <div>
+            <h1>Unlock the Future with AI-Powered Face Recognation</h1>
+            <p></p>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
     </div>
   );
 }
