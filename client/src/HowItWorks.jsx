@@ -1,7 +1,7 @@
 import React from 'react';
 import Image1 from "./assets/image1.png";
 import Image2 from "./assets/image2.png";
-import { FaLock, FaShieldAlt, FaUser, FaFile } from 'react-icons/fa';
+import { FaLock, FaFile, FaFolder, FaKey } from 'react-icons/fa';
 
 export default function HowItWorks() {
   return (
@@ -56,27 +56,27 @@ export default function HowItWorks() {
 
       <div className='max-w-7xl mx-auto mt-10'>
           <h1 className='text-5xl font-bold text-white mb-4 text-center'>Your Privancy, Our Priority</h1>
-          <div className='grid grid-cols-2'>
-              <div className=''>
-                 <FaFile className='text-white' />
-                 <h1>GDPR & Compliance Ready</h1>
-                 <p>We follow strict global data protection standard.</p>
+          <div className='grid grid-cols-2 mt-12'>
+              <div className='bg-white/10 p-4 border-b border-white h-50'>
+                 <FaFile className='text-3xl text-blue-400 ms-4' />
+                 <h1 className='text-2xl mt-4 text-white font-bold ms-4'>GDPR & Compliance Ready</h1>
+                 <p className='text-white mt-5 ms-4'>We follow strict global data protection standard.</p>
               </div>
               
-              <div>
-                 <FaLock className='text-white' />
+              <div className='bg-white/10 p-4 border-b border-white h-50'>
+                 <FaFolder className='text-white' />
                  <h1>No Data Stored Without Consent</h1>
                  <p>Replace password with face authentication for frictionless login.</p>
               </div>
               
-              <div>
-                 <FaShieldAlt className='text-white' />
+              <div className='bg-white/10 p-4 h-50'>
+                 <FaKey className='text-white' />
                  <h1>Advanced Anti-Spoofing</h1>
                  <p>We follow strict global data protection standard.</p>
               </div>
               
-              <div>
-                 <FaUser className='text-white' />
+              <div className='bg-white/10 p-4 h-50'>
+                 <FaLock className='text-white' />
                  <h1>End-to-End Encryption</h1>
                  <p>Every authentication request is securely encrypted to protect against breaches.</p>
               </div>
