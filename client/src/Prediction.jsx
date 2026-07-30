@@ -1,3 +1,5 @@
+import { useState } from "react"
+import axios from "axios";
 
 const Prediction = () => {
      const [image, setImage] = useState(null);
