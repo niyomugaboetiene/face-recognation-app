@@ -9,7 +9,7 @@ export default function HowItWorks() {
       
 {/* effects */}
       <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-purple-600/40 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-pink-600/30 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[50%] right-[40%] w-[500px] h-[500px] bg-pink-600/30 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[60%] right-[-10%] w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px] pointer-events-none"></div>
       
       <div className="relative z-10 w-full">
@@ -83,9 +83,13 @@ export default function HowItWorks() {
           </div>
       </div>
 
-      <div className='max-w-7xl mx-auto mt-10'>
-         <div className='bg-white/10 backdrop-blur-lg rounded-xl'>
-            <h1>Ready to Experience the Future of Face Recognation ?</h1>
+      <div className="absolute bottom-[-20%] right-[70%] w-[500px] h-[500px] bg-pink-600/30 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[-20%] right-[10%] w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px] pointer-events-none"></div>
+      
+
+      <div className='max-w-7xl mx-auto mt-15'>
+         <div className='bg-white/10 backdrop-blur-lg rounded-xl h-60'>
+            <h1 className='text-4xl w-1/2 ms-70 font-bold text-white text-center'>Ready to Experience the Future of Face Recognation ?</h1>
             <p>Stay today and enhance security with the power of AI.</p>
 
             <div>
