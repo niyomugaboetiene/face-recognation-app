@@ -1,6 +1,7 @@
 import React from 'react';
 import Image1 from "./assets/image1.png";
 import Image2 from "./assets/image2.png";
+import { FaLock, FaShieldAlt, FaUser, FaFile } from 'react-icons/fa';
 
 export default function HowItWorks() {
   return (
@@ -55,8 +56,30 @@ export default function HowItWorks() {
 
       <div className='max-w-7xl mx-auto mt-10'>
           <h1 className='text-5xl font-bold text-white mb-4 text-center'>Your Privancy, Our Priority</h1>
-          <div>
-
+          <div className='grid grid-cols-2'>
+              <div className=''>
+                 <FaFile className='text-white' />
+                 <h1>GDPR & Compliance Ready</h1>
+                 <p>We follow strict global data protection standard.</p>
+              </div>
+              
+              <div>
+                 <FaLock className='text-white' />
+                 <h1>GDPR & Compliance Ready</h1>
+                 <p>We follow strict global data protection standard.</p>
+              </div>
+              
+              <div>
+                 <FaShieldAlt className='text-white' />
+                 <h1>GDPR & Compliance Ready</h1>
+                 <p>We follow strict global data protection standard.</p>
+              </div>
+              
+              <div>
+                 <FaUser className='text-white' />
+                 <h1>GDPR & Compliance Ready</h1>
+                 <p>We follow strict global data protection standard.</p>
+              </div>
           </div>
       </div>
    </div>
