@@ -20,7 +20,7 @@ export default function HowItWorks() {
 
              <div className=''>
                  <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-lg p-2'>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3'>1</h1>
                    </div>
@@ -30,7 +30,7 @@ export default function HowItWorks() {
                    </div>
                  </div>
                  
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-lg p-2 mt-7'>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3'>2</h1>
                    </div>
@@ -40,7 +40,7 @@ export default function HowItWorks() {
                    </div>
                  </div>
                  
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-lg p-2 mt-7'>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3'>3</h1>
                    </div>
