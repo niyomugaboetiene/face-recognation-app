@@ -20,7 +20,7 @@ export default function HowItWorks() {
 
              <div className='mt-40'>
                  <h1 className='text-5xl font-bold text-white mb-4'>How It Works</h1>
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 h-27'>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 h-27 hover:scale-105 transition duration-200'>
                    <div className='bg-white w-14 h-13 mt-5  rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3 font-bold'>1</h1>
                    </div>
@@ -30,7 +30,7 @@ export default function HowItWorks() {
                    </div>
                  </div>
                  
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7 border-4 border-blue-400 w-140 shadow-2xl shadow-blue-400 h-27'>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7 border-4 border-blue-400 w-140 shadow-2xl shadow-blue-400 h-27 hover:scale-105 transition duration-200'>
                    <div className='bg-blue-400 w-14 h-13 mt-5  rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3 font-bold'>2</h1>
                    </div>
@@ -40,7 +40,7 @@ export default function HowItWorks() {
                    </div>
                  </div>
                  
-                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7 h-27'>
+                 <div className='bg-white/20 backdrop-blur-md flex rounded-xl p-2 mt-7 h-27 hover:scale-105 transition duration-200'>
                    <div className='bg-white w-14 h-13 mt-5 rounded-lg'>
                        <h1 className='text-black text-2xl text-center mt-3 font-bold'>3</h1>
                    </div>
