@@ -1,5 +1,4 @@
 import Home from "./Home";
-import Prediction from "./Prediction";
 import HowItWorks from "./HowItWorks";
 
 const Entry = () => {
